@@ -1,0 +1,17 @@
+{
+  "loopback-component-explorer": {
+    "mountPath": "/explorer",
+    "generateOperationScopedModels": true,
+    "auth": {
+      "in": "query",
+      "name": "access_token"
+    }
+  },
+  "creport-lib/server/ContentRange": {
+    "pattern": [
+      "*.find",
+      "*.mapList"
+    ],
+    "header": "content-range"
+  }
+}
