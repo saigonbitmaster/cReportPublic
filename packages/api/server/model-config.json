@@ -1,0 +1,94 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "creport-lib/server/models",
+      "../common/models",
+      "./models",
+      "../common/common-models",
+      "../common/creport-models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "creport-lib/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "AccessToken": {
+    "dataSource": "cReportSystem",
+    "public": false,
+    "relations": {
+      "user": {
+        "type": "belongsTo",
+        "model": "AppUser",
+        "foreignKey": "userId"
+      }
+    }
+  },
+  "ACL": {
+    "dataSource": "cReportSystem",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "cReportSystem",
+    "public": true,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "cReportSystem",
+    "public": true
+  },
+
+  "ErrorLog": {
+    "dataSource": "cReportSystem",
+    "public": true
+  },
+  "Email": {
+    "dataSource": "email"
+  },
+  "AppUser": {
+    "dataSource": "cReportSystem",
+    "public": true,
+    "options": {
+      "emailVerificationRequired": true
+    }
+  },
+  "AutoIncrease": {
+    "dataSource": "cReportSystem",
+    "public": false
+  },
+
+  "BackgroundJob": {
+    "dataSource": "cReportSystem",
+    "public": true
+  },
+  "PackageConfig": {
+    "dataSource": "cReportSystem"
+  },
+  "MessageSystem": {
+    "dataSource": "cReportSystem",
+    "public": true
+  },
+  "TestData": {
+    "dataSource": "cReportData",
+    "public": true
+  },
+
+  "ReportFund": {
+    "dataSource": "cReportData",
+    "public": true
+  },
+  "TestReportFund": {
+    "dataSource": "cReportData",
+    "public": true
+  },
+  "Setting": {
+    "dataSource": "cReportData",
+    "public": true
+  }
+}
