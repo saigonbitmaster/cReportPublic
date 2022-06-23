@@ -1,8 +1,12 @@
-# cReport
-
+# cReport staging server
+http://creport.bworks.app:4001/web/#/login
 ## Run dev app
 
 ```
+git clone https://github.com/saigonbitmaster/cReportPublic
+yarn
+yarn run-api
+yarn run-web
 ```
 
 ## Setup .env file
