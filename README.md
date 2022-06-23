@@ -4,6 +4,7 @@ http://creport.bworks.app:4001/web/#/login
 
 ```
 git clone https://github.com/saigonbitmaster/cReportPublic
+cd cReportPublic
 yarn
 yarn run-api
 yarn run-web
