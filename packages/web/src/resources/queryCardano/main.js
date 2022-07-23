@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Create, FlexForm, TextInput, required, translate, EditorInput, DateTimeInput } from 'creport-lib';
+import { Create, FlexForm, TextInput, required, translate, EditorInput, DateTimeInput } from 'ra-loopback3';
 import compose from 'recompose/compose';
 import { PasswordInput } from 'react-admin';
 import Select from './select'

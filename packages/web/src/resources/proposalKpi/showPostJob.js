@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { compose } from 'recompose';
 import { Grid, Chip } from '@material-ui/core';
-import { Show, HtmlField, TextField, translate, FlexForm, BooleanField, DateField, NumberField, ArrayField, SingleFieldList, ChipField} from 'creport-lib';
+import { Show, HtmlField, TextField, translate, FlexForm, BooleanField, DateField, NumberField, ArrayField, SingleFieldList, ChipField} from 'ra-loopback3';
 import config from '../../Config';
 
 const TagsField = ({ record }) =>

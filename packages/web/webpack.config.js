@@ -7,7 +7,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // production
 // var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyWebpackPlugin = require('uglifyjs-webpack-plugin');
-const envVariables = require('creport-lib/webpack-config/env-variables');
+const envVariables = require('ra-loopback3/webpack-config/env-variables');
 
 let config = {
   entry: ['babel-polyfill', path.resolve(__dirname, './src/index.js')],
@@ -63,7 +63,7 @@ let config = {
   ],
   resolve: {
     alias: {
-      'creport-lib': path.join(__dirname, '..', 'creport-lib', 'src'),
+      'ra-loopback3': path.join(__dirname, '..', 'ra-loopback3', 'src'),
     },
   },
   optimization: {

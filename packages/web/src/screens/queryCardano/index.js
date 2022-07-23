@@ -1,9 +1,9 @@
-import { QuotacreportIcon } from '../../styles/Icons';
+import { QuotaWaterIcon } from '../../styles/Icons';
 import Main from '../../resources/queryCardano/main'
 export default {
   name: 'ChangePassword',
   label: 'generic.pages.querycardano',
-  icon: QuotacreportIcon,
+  icon: QuotaWaterIcon,
   url: 'querycardano',
   screens: {
     main: Main

@@ -14,7 +14,7 @@ import {
   SelectArrayInput,
   SimpleFormIterator,
   BooleanInput
-} from 'creport-lib';
+} from 'ra-loopback3';
 import { Grid , Hidden } from '@material-ui/core';
 
 import compose from 'recompose/compose';
