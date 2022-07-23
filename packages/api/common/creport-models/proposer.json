@@ -1,0 +1,27 @@
+{
+  "name": "Proposer",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "forceId": false,
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "catalystAccount": {
+      "type": "string"
+    },
+    "createdDate": {
+      "type": "date"
+    },
+    "proposers": {
+      "type": "any"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
