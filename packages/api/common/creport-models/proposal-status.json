@@ -1,0 +1,18 @@
+{
+  "name": "ProposalStatus",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "forceId": false,
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

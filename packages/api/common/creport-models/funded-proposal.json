@@ -1,0 +1,69 @@
+{
+  "name": "FundedProposal",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "forceId": false,
+  "properties": {
+    "projectId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "requestedBudget": {
+      "type": "number"
+    },
+    "gitLink": {
+      "type": "string"
+    },
+    "smartContract": {
+      "type": "string"
+    },
+    "projectStatus": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "completeDate": {
+      "type": "date"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "fund": {
+      "type": "belongsTo",
+      "model": "Fund",
+      "foreignKey": "fundId",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "challenge": {
+      "type": "belongsTo",
+      "model": "Challenge",
+      "foreignKey": "challengeId",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "proposer": {
+      "type": "belongsTo",
+      "model": "Proposer",
+      "foreignKey": "proposerId",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+
+
+  },
+  "acls": [],
+  "methods": {}
+}

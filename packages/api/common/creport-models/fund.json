@@ -1,0 +1,27 @@
+{
+  "name": "Fund",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "forceId": false,
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "budget": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

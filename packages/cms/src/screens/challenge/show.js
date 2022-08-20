@@ -12,7 +12,7 @@ import {
   DateField,
   NumberField,
   ReferenceField,
-} from 'ra-loopback3';
+} from 'ra';
 import config from '../../Config';
 
 class ShowPostJob extends Component {

@@ -1,0 +1,30 @@
+{
+  "name": "Challenge",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "forceId": false,
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "budget": {
+      "type": "number"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "fund": {
+      "type": "belongsTo",
+      "model": "Fund",
+      "foreignKey": "fundId",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
