@@ -1,0 +1,24 @@
+{
+  "name": "GitCommit",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "forceId": false,
+  "properties": {
+    "gitLink": {
+      "type": "string"
+    },
+    "gitCommits": {
+      "type": "any"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "proposalId": {
+      "type": "belongsTo",
+      "model": "FundedProposal",
+      "foreignKey": "proposerId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
